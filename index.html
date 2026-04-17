@@ -37,9 +37,10 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 5%;
       height: 72px;
-      background: rgba(0,10,30,0.92);
+      background: rgba(255,255,255,0.97);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(33,150,243,0.15);
+      border-bottom: 1px solid rgba(21,101,192,0.15);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
     .nav-logo {
       display: flex; align-items: center; gap: 12px;
@@ -49,24 +50,12 @@
       height: 44px;
       object-fit: contain;
     }
-    .nav-logo-text {
-      display: flex; flex-direction: column; line-height: 1.1;
-    }
-    .nav-logo-text span:first-child {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; font-size: 0.95rem;
-      color: var(--white); letter-spacing: 0.04em;
-    }
-    .nav-logo-text span:last-child {
-      font-size: 0.68rem; color: var(--bright);
-      font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-    }
     .nav-links {
       display: flex; gap: 32px; list-style: none;
     }
     .nav-links a {
-      color: rgba(255,255,255,0.75); text-decoration: none;
-      font-family: 'Montserrat', sans-serif; font-weight: 600;
+      color: var(--navy); text-decoration: none;
+      font-family: 'Montserrat', sans-serif; font-weight: 700;
       font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
       transition: color 0.2s;
     }
@@ -90,7 +79,7 @@
     }
     .hero-bg-photo {
       position: absolute; inset: 0;
-      background: url('VRF_Azotea.jpeg') center center / cover no-repeat;
+      background: url('Chillers (carrier).png') center center / cover no-repeat;
       opacity: 0.28;
       pointer-events: none;
     }
@@ -113,13 +102,13 @@
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(33,150,243,0.15);
-      border: 1px solid rgba(33,150,243,0.4);
+      background: rgba(255,255,255,0.95);
+      border: 1px solid rgba(255,255,255,0.8);
       border-radius: 40px;
       padding: 6px 16px; margin-bottom: 28px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700; font-size: 0.72rem;
-      letter-spacing: 0.1em; text-transform: uppercase; color: var(--bright);
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy);
     }
     .hero-badge::before {
       content: ''; width: 8px; height: 8px; border-radius: 50%;
@@ -258,7 +247,7 @@
       display: inline-block; margin-bottom: 24px;
     }
     .carrier-logo-block img {
-      height: 40px; object-fit: contain; display: block;
+      height: 400px; object-fit: contain; display: block;
     }
     .carrier-logo-text {
       font-family: 'Bebas Neue', sans-serif;
@@ -274,10 +263,10 @@
     }
     .cert-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(33,150,243,0.15); border: 1px solid rgba(33,150,243,0.35);
+      background: rgba(255,255,255,0.95); border: 1px solid rgba(255,255,255,0.8);
       border-radius: 4px; padding: 8px 14px; margin-top: 20px;
       font-family: 'Montserrat', sans-serif; font-weight: 700;
-      font-size: 0.75rem; color: var(--bright); text-transform: uppercase; letter-spacing: 0.07em;
+      font-size: 0.75rem; color: var(--navy); text-transform: uppercase; letter-spacing: 0.07em;
     }
     .pillars-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
     .pillar-item {
@@ -367,7 +356,7 @@
     .why-item:hover { background: rgba(33,150,243,0.06); }
     .why-num {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 3.5rem; color: rgba(33,150,243,0.2);
+      font-size: 3.5rem; color: var(--bright);
       line-height: 1; margin-bottom: 12px;
     }
     .why-item h3 {
@@ -469,43 +458,44 @@
 
     /* ── FOOTER ── */
     footer {
-      background: #000509;
+      background: var(--white);
       padding: 48px 5% 32px;
-      border-top: 1px solid rgba(33,150,243,0.15);
+      border-top: 3px solid var(--bright);
+      color: var(--grey);
     }
     .footer-grid {
       display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px;
       margin-bottom: 40px;
     }
     .footer-brand p {
-      font-size: 0.85rem; color: rgba(255,255,255,0.5);
+      font-size: 0.85rem; color: #555;
       line-height: 1.7; margin-top: 16px; max-width: 340px;
     }
     .footer-col h4 {
-      font-family: 'Montserrat', sans-serif; font-weight: 700;
+      font-family: 'Montserrat', sans-serif; font-weight: 800;
       font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--bright); margin-bottom: 18px;
+      color: var(--navy); margin-bottom: 18px;
     }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 10px; }
     .footer-col ul li a {
-      color: rgba(255,255,255,0.55); text-decoration: none;
+      color: #555; text-decoration: none;
       font-size: 0.85rem; transition: color 0.2s;
     }
     .footer-col ul li a:hover { color: var(--bright); }
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.07);
+      border-top: 1px solid rgba(0,0,0,0.08);
       padding-top: 24px;
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 12px;
     }
     .footer-bottom p {
-      font-size: 0.78rem; color: rgba(255,255,255,0.35);
+      font-size: 0.78rem; color: #888;
     }
     .footer-bottom .carrier-auth {
       display: flex; align-items: center; gap: 8px;
       font-family: 'Montserrat', sans-serif; font-weight: 700;
-      font-size: 0.72rem; color: var(--bright); text-transform: uppercase; letter-spacing: 0.06em;
+      font-size: 0.72rem; color: var(--navy); text-transform: uppercase; letter-spacing: 0.06em;
     }
 
     /* ── MOBILE ── */
@@ -587,7 +577,7 @@
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">
-    <img src="GrupoECAB-04.png" alt="Grupo ECA Electromecánica" style="height:48px;object-fit:contain;" />
+    <img src="GrupoECAB-03.png" alt="Grupo ECA Electromecánica" style="height:48px;object-fit:contain;" />
   </a>
   <ul class="nav-links">
     <li><a href="#authorized">Carrier Authorization</a></li>
@@ -612,7 +602,7 @@
     <div class="hero-subtitle">
       Aruba &amp; Curaçao's Official
       <span style="display:inline-block;vertical-align:middle;margin:0 8px;">
-        <img src="Carrier-02.png" alt="Carrier" style="height:52px;object-fit:contain;vertical-align:middle;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.5));" />
+        <img src="Carrier-02.png" alt="Carrier" style="height:104px;object-fit:contain;vertical-align:middle;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.5));" />
       </span>
       Authorized Distributor
     </div>
@@ -669,7 +659,7 @@
 <section id="authorized">
   <div class="section-tag">Official Authorization</div>
   <h2 class="section-title"><span class="hl">Authorized</span>
-    <img src="Carrier-02.png" alt="Carrier" style="height:0.9em;object-fit:contain;vertical-align:-0.1em;margin:0 0.15em;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.3));" />
+    <img src="Carrier-02.png" alt="Carrier" style="height:1.8em;object-fit:contain;vertical-align:-0.1em;margin:0 0.15em;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.3));" />
     Distributor in Aruba</h2>
   <p class="section-desc">
     Grupo ECA Electromecánica holds official authorization from Carrier — the inventor of air conditioning — to distribute, install, and service Carrier products in Aruba and Curaçao. Our certification is backed by 51+ years of proven engineering results.
@@ -731,38 +721,37 @@
   </div>
   <div class="services-grid">
     <div class="service-card fade-up">
-      <img src="VRF.jpg" alt="Carrier VRF HVAC Installation" class="service-card-img" />
-      <span class="service-icon">❄️</span>
+      <img src="Chillers (carrier).png" alt="Air Conditioning" class="service-card-img" />
       <h3>Air Conditioning &amp; Chillers (Carrier)</h3>
       <p>Complete Carrier HVAC systems designed for Aruba's tropical climate. Sales, design, installation, maintenance, and original spare parts — fully authorized by Carrier.</p>
       <span class="service-tag">Carrier Certified</span>
     </div>
     <div class="service-card fade-up">
-      <span class="service-icon">☀️</span>
+      <img src="Solar Energy Systems.png" alt="Solar Energy" class="service-card-img" />
       <h3>Solar Energy Systems</h3>
       <p>Reduce your electricity bill by up to 40%. We design, install, and monitor solar panel systems with real-time energy savings reports and carbon footprint tracking.</p>
       <span class="service-tag">Commercial &amp; Industrial</span>
     </div>
     <div class="service-card fade-up">
-      <span class="service-icon">🔥</span>
+      <img src="Fire.png" alt="Fire Protection" class="service-card-img" />
       <h3>Fire Protection Systems</h3>
       <p>Custom fire detection, alarm, sprinkler, and suppression systems. Designed to code, pump-tested, and certified — protecting your assets and people.</p>
       <span class="service-tag">Fully Certified</span>
     </div>
     <div class="service-card fade-up">
-      <span class="service-icon">🤖</span>
+      <img src="Automation & control.png" alt="Building Automation" class="service-card-img" />
       <h3>Building Automation &amp; Control</h3>
       <p>Control all your building systems — HVAC, lighting, alarms — from any device. Smart, centralized control that saves energy and improves operations.</p>
       <span class="service-tag">BMS / Smart Building</span>
     </div>
     <div class="service-card fade-up">
-      <span class="service-icon">🌬️</span>
+      <img src="Ventilaiton Systems.png" alt="Ventilation Systems" class="service-card-img" />
       <h3>Ventilation Systems</h3>
       <p>Professional ventilation design and installation for commercial, industrial, and hospitality spaces. Meeting air quality requirements and architectural specifications.</p>
       <span class="service-tag">Design &amp; Installation</span>
     </div>
     <div class="service-card fade-up">
-      <span class="service-icon">🔧</span>
+      <img src="After Sales Service & Maintenance.png" alt="After-Sales Service" class="service-card-img" />
       <h3>After-Sales Service &amp; Maintenance</h3>
       <p>Guaranteed post-installation support, preventive maintenance programs, and rapid-response technical service — ensuring your systems perform at peak efficiency.</p>
       <span class="service-tag">24/7 Support</span>
@@ -774,30 +763,36 @@
 <section id="projects">
   <div class="section-tag">Our Work</div>
   <h2 class="section-title">Real <span class="hl">Projects.</span><br>Real Results.</h2>
-  <p class="section-desc">Carrier VRF systems and electromechanical installations delivered across the Caribbean and Latin America.</p>
+  <p class="section-desc">Projects completed across Aruba, the Caribbean, and Latin America — from hospitality and healthcare to banking and international airports.</p>
   <div class="gallery-grid">
     <div class="gallery-item wide fade-up">
-      <img src="VRF_Azotea.jpeg" alt="Carrier VRF XPower installation on rooftop" />
-      <div class="gallery-caption">Carrier VRF XPower — Rooftop Installation
-        <span>Multiple outdoor units, full DC inverter system</span>
+      <img src="project_airport.png" alt="Aruba International Airport project" />
+      <div class="gallery-caption">Reina Beatrix International Airport — Aruba
+        <span>Electromechanical systems for Aruba's main international gateway</span>
       </div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="VRF_comercial.png" alt="Commercial VRF rooftop system" />
-      <div class="gallery-caption">Commercial VRF System
-        <span>Carrier XPower outdoor condensers</span>
+      <img src="project_joia.png" alt="JOIA Aruba by Iberostar resort" />
+      <div class="gallery-caption">JOIA Aruba by Iberostar
+        <span>HVAC systems for luxury beachfront resort</span>
       </div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="VRF_exterior.png" alt="VRF exterior condensing units" />
-      <div class="gallery-caption">VRF Exterior Units
-        <span>Large-scale commercial deployment</span>
+      <img src="project_arubabank.png" alt="Arubabank headquarters" />
+      <div class="gallery-caption">Arubabank Headquarters
+        <span>Complete building HVAC &amp; automation</span>
       </div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="VRF_Condensadora.jpg" alt="VRF refrigerant piping detail" />
-      <div class="gallery-caption">Precision Piping & Connections
-        <span>Professional installation detail</span>
+      <img src="project_hospital.png" alt="Aruba Hospital" />
+      <div class="gallery-caption">Aruba Hospital
+        <span>Critical climate systems for healthcare</span>
+      </div>
+    </div>
+    <div class="gallery-item fade-up">
+      <img src="project_pricesmart.png" alt="PriceSmart Aruba" />
+      <div class="gallery-caption">PriceSmart Aruba
+        <span>40+ projects across the PriceSmart network</span>
       </div>
     </div>
     <div class="gallery-item wide fade-up">
@@ -821,12 +816,12 @@
     <div class="gallery-item fade-up">
       <img src="taller.jpg" alt="ECA technician working in workshop" />
       <div class="gallery-caption">Expert Craftsmanship
-        <span>Skilled ECA technicians — fabrication & metalwork</span>
+        <span>Skilled ECA technicians — fabrication &amp; metalwork</span>
       </div>
     </div>
     <div class="gallery-item wide fade-up">
-      <img src="equipo_aruba.jpg" alt="Grupo ECA Aruba team at office" />
-      <div class="gallery-caption">Our Aruba Team — Ready to Serve You
+      <img src="equipo_aruba.jpg" alt="Part of Grupo ECA Aruba team at office" />
+      <div class="gallery-caption">Part of Our Aruba Team — Ready to Serve You
         <span>Schotlandstraat 77, Oranjestad, Aruba</span>
       </div>
     </div>
@@ -836,7 +831,7 @@
 <!-- WHY ECA -->
 <section id="why">
   <div class="section-tag">Why Choose Us</div>
-  <h2 class="section-title">The <span class="hl">Grupo ECA</span> Difference</h2>
+  <h2 class="section-title">The <img src="GrupoECAB-04.png" alt="Grupo ECA" style="height:1.4em;object-fit:contain;vertical-align:-0.15em;margin:0 0.15em;" /> Difference</h2>
   <p class="section-desc">Real projects. Real results. Proven across 14+ countries for over half a century.</p>
   <div class="why-grid">
     <div class="why-item fade-up">
@@ -982,7 +977,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="GrupoECAB-04.png" alt="Grupo ECA Electromecánica" style="height:56px;object-fit:contain;display:block;margin-bottom:14px;" />
+      <img src="GrupoECAB-03.png" alt="Grupo ECA Electromecánica" style="height:56px;object-fit:contain;display:block;margin-bottom:14px;" />
       <p>
         Official Authorized Carrier Distributor in Aruba &amp; Curaçao. 51+ years of engineering excellence. TOP 100 Electromechanical Contractors in Latin America &amp; the Caribbean.
       </p>
@@ -1014,7 +1009,7 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       Official Authorized
       <span style="display:inline-block;vertical-align:middle;margin:0 5px;">
-        <img src="Carrier-02.png" alt="Carrier" style="height:22px;object-fit:contain;vertical-align:middle;" />
+        <img src="Carrier-02.png" alt="Carrier" style="height:44px;object-fit:contain;vertical-align:middle;" />
       </span>
       Distributor — Aruba &amp; Curaçao
     </div>
